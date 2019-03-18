@@ -8,8 +8,8 @@ let package = Package(
         .library(name: "PangoCairo", targets: ["PangoCairo"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/rhx/SwiftCairo.git", .branch("master")),
-        .package(url: "https://github.com/rhx/SwiftPango.git", .branch("master"))
+        .package(url: "https://github.com/Brett-Best/SwiftCairo.git", .branch("bb-pkg-dev")),
+        .package(url: "https://github.com/Brett-Best/SwiftPango.git", .branch("bb-pkg-dev"))
     ],
     targets: [
         .target(name: "PangoCairo", dependencies: ["Cairo", "Pango"]),
